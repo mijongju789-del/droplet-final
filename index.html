@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droplet Scroll Cut</title>
+    <link rel="stylesheet" href="./style.css?v=39" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="spacer" aria-hidden="true"></div>
+
+      <section class="toon">
+        <img class="base" src="./base.png" alt="webtoon base" />
+        <img class="grass-up-layer" src="./grass-up.png?v=28" alt="" aria-hidden="true" />
+        <div class="leaf-wrap">
+          <video
+            id="leafVideo"
+            class="leaf"
+            src="./leaf-fall.mp4?v=25"
+            preload="auto"
+            muted
+            playsinline
+          ></video>
+        </div>
+      </section>
+
+      <div class="spacer spacer--bottom" aria-hidden="true"></div>
+    </main>
+
+    <div class="drop-stage" aria-hidden="true">
+      <img class="drop-frame" src="./drop-1.png" alt="" />
+      <img class="drop-frame" src="./drop-2.png" alt="" />
+      <img class="drop-frame" src="./drop-3.png" alt="" />
+      <img class="drop-frame" src="./drop-4.png" alt="" />
+      <img class="drop-frame" src="./drop-5.png" alt="" />
+    </div>
+
+    <script src="./script.js?v=45"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fff;
+}
+
+.page {
+  width: 100%;
+  background: #fff;
+}
+
+.spacer {
+  height: 110vh;
+  min-height: 760px;
+  background: #fff;
+}
+
+.spacer--bottom {
+  height: 120vh;
+}
+
+.toon {
+  position: relative;
+  width: min(100vw, 690px);
+  margin: 0 auto;
+}
+
+.base {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.grass-up-layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.leaf-wrap {
+  position: absolute;
+  left: -6.28%;
+  top: -9.8%;
+  width: 112%;
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.leaf {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+.drop-stage {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: min(34vw, 260px);
+  aspect-ratio: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.drop-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+@media (max-width: 520px) {
+  .spacer {
+    height: 95vh;
+    min-height: 560px;
+  }
+
+  .drop-stage {
+    width: min(48vw, 210px);
+  }
+}
